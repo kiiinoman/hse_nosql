@@ -43,13 +43,8 @@ chmod +x init_sharding.sh
 ./init_sharding.sh
 ```
 
-### 3. Установка Python зависимостей
 
-```bash
-pip install pymongo locust
-```
-
-### 4. Заполнение тестовыми данными
+### 3. Заполнение тестовыми данными
 
 ```bash
 # По умолчанию: 10 000 студентов, 3 курса на студента
@@ -59,13 +54,13 @@ python seed.py
 python seed.py --students 50000 --enrollments 5
 ```
 
-### 5. Запуск CLI
+### 4. Запуск CLI
 
 ```bash
 python cli.py
 ```
 
-### 6. Нагрузочное тестирование
+### 5. Нагрузочное тестирование
 
 ```bash
 # С веб-интерфейсом (открыть http://localhost:8089)
